@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Typing Game</title>
+  </head>
+  <body>
+    <h1>Typing Game</h1>
+    <div class="circle"></div>
+    <div class="score-section">
+      <div class="score" style="background-color: seagreen">
+        <p>Correct</p>
+        <p id="correct">0</p>
+      </div>
+      <div class="score" style="background-color: orange">
+        <p>Miss</p>
+        <p id="miss">0</p>
+      </div>
+      <div class="score" style="background-color: brown">
+        <p>Wrong</p>
+        <p id="wrong">0</p>
+      </div>
+    </div>
+    <progress value="0" max="100"></progress>
+    <label for="speed">Speed</label>
+    <input type="range" id="speed" min="100" max="1000">
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
